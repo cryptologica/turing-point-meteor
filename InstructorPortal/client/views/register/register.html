@@ -1,0 +1,21 @@
+<template name="register">
+	<form class="registrationForm">
+		<ul id="registerForm">
+			<li>Name:</li>
+			<li><input type="text" name="fName" placeholder="First Name">
+				<input type="text" name="lName" placeholder="Last Name"></li>
+			<li>Student ID:</li>
+			<li><input type="text" name="studID" placeholder="Student ID"></li>
+			<li>E-Mail:</li>
+			<li><input type="text" name="email" placeholder="E-mail"></li>
+			<li>Password:</li>
+			<li><input type="password" id="password" name="password"
+				placeholder="Password"></li>
+			<li>Role:</li>
+			<li><input type="radio" name="role" value="STUDENT" checked>Student</li>
+			<li><input type="radio" name="role" value="INSTRUCTOR">Instructor</li>
+		</ul>
+		<input id="submitRegistration" type="submit" value="Submit">
+	</form>
+	<input id="cancelButton" type="submit" value="Cancel"> 
+</template>

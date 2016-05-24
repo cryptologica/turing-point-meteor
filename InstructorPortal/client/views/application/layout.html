@@ -1,0 +1,29 @@
+<template name="layout">
+	<!-- Put header here -->
+	<header>
+		<div id="headerContent">
+			<img id="logo" src="/Logo.png">
+			<div id="picInfoContainer" align="right">
+			    <img id="profilePic" src="/userIcon.png">
+				<p id="userInfo">
+					{{session "currUser"}} {{{isLogout}}}
+				</p>
+			</div>
+			<ul id = "menuContainer">
+				<li id="inline" class="navBarClass">
+					{{{navBar}}}
+				</li>
+			</ul>
+		</div>
+	</header>
+
+	<!-- This is where all of the templates will be rendered -->
+	<div>
+	{{> yield}}
+	</div>
+	
+	<!-- Put footer here -->  
+	<div id="footer"></div>
+
+</template>
+

@@ -1,0 +1,13 @@
+<template name="lectures">
+	<fieldset id="lectureGroups">
+		<legend>Lectures</legend>
+		<!-- Courses will be inserted into here -->
+	</fieldset>
+	<br>
+	<button id="add-lecture" role="button">
+		<span>Add Lecture</span>
+	</button>
+	
+	<!-- Add forms and modals here. Don't render them until specific button is clicked -->
+	{{> createLectureForm}}
+</template>

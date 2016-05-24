@@ -1,0 +1,17 @@
+<template name="home">
+	<div>
+		<div id="courseGroupingsDiv">
+			<fieldset id="coursesID">
+				<legend>Courses</legend>
+				<!-- Courses will be inserted into here -->
+			</fieldset>	
+		</div>
+		<button title="Click to add a course" id="add-course" role="button">
+			<span>Add Course</span>
+		</button>
+	</div>
+	
+	<!-- Add forms and modals here. Don't render them until specific button is clicked -->
+	{{> createCourseForm}}
+	
+</template>

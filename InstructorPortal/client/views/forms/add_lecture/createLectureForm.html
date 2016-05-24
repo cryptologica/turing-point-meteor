@@ -1,0 +1,13 @@
+<template name="createLectureForm">
+	<!-- Dialog that's displayed when you click "Add Lecture" -->
+	<div id="lecture-dialog-form" title="Create new lecture">
+		<form class="addLectureForm">
+			<fieldset id="formBox">
+				<label for="name">Lecture Name</label> 
+				<input type="text" name="name" id="name" class="text">
+				<!-- Allow form submission with keyboard without duplicating the dialog button -->
+				<input type="submit" tabindex="-1" style="position: absolute; top: -1000px">
+			</fieldset>
+		</form>
+	</div>
+</template>

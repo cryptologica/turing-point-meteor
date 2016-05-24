@@ -1,0 +1,65 @@
+<template name="quiz">
+	<div>
+    <div id="sideList" class="block">
+        This is the div into which the side list is going to go, its super exciting and really helps with people to feel good about their life skills
+    </div>
+
+    <div id="editPane" class="border padded block">
+
+        <form>
+            <input id="questionTitleText" class="titleInputText" placeholder="Question Title" type="text" name="title">
+            <br>
+            <input id="questionContentText" class="titleInputText" placeholder="Question Text" type="text" name="content">
+            <br>
+            <input id="showAnswerCheckbox" type="checkbox" name="showAnswer" value="showAnswer" checked="checked">Show Answer<br>
+            <br>
+            <div class="padded border">
+                Question Type
+                <br>
+                <input type="radio" name="type" value="0" checked="checked">multiple-choice
+                <input type="radio" name="type" value="1">fill-in-the-blank
+                <input type="radio" name="type" value="2">multiple-answer
+                <input type="radio" name="type" value="3">essay
+                <input type="radio" name="type" value="4">matching
+            </div>
+
+            <br>
+            <div id="questionOptionBox" class="padded border">
+                Answers
+                <div class="questionAnswerBlock">
+                   <button type="button" class="deleteAnswerBtn">Delete Answer</button> <input placeholder="Answer" type="text" name="answer"> <span class="correctRadioBtn"><input type="radio" name="ans" value="0">Correct</span>
+                </div>          
+                <div class="questionAnswerBlock">
+                   <button type="button" class="deleteAnswerBtn">Delete Answer</button> <input placeholder="Answer" type="text" name="answer"> <span class="correctRadioBtn"><input type="radio" name="ans" value="0">Correct</span>
+                </div>  
+                <div class="questionAnswerBlock">
+                   <button type="button" class="deleteAnswerBtn">Delete Answer</button> <input placeholder="Answer" type="text" name="answer"> <span class="correctRadioBtn"><input type="radio" name="ans" value="0">Correct</span>
+                </div>  
+                <div class="questionAnswerBlock">
+                   <button type="button" class="deleteAnswerBtn">Delete Answer</button> <input placeholder="Answer" type="text" name="answer"> <span class="correctRadioBtn"><input type="radio" name="ans" value="0">Correct</span>
+                </div>  
+            </div>
+            
+            <br>
+            <button type="button" id="addAnswerBtn">Add Answer</button>
+            <br>
+
+            <br>
+            <div id="questionTabArea" class="padded border">
+                Tab Area- you need to use JS to make more tabs
+
+                <br>
+                <input id="questionFeedbackText" placeholder="Question Feedback" type="textarea" name="feedback">
+            </div>
+
+            <br>
+            <div>
+                <button type="button">Save Question</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+</template>
